@@ -26,3 +26,4 @@ yarn-error.log*
 /Global settings
 /Local settings
 /.git
+/.vs
