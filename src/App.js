@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import React, { useState } from 'react'
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
@@ -58,7 +58,7 @@ function App() {
                         /users --> component1   //without exact use it will always match users here and call this component
                         /users/home --> component2
                         */}
-                    <Route exact path="/about" element={<About />} />
+                        <Route exact path="/about" element={<About mode={mode}/>} />
                     <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the Text" mode={mode} />} />                    
                 </Routes>
             </div>
